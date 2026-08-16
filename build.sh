@@ -1,6 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -exuo pipefail
-yarn build
+
+bun install
+# Build (non-minified — see vite.config.js)
+bun run build
+
 cp dist/wavy.iife.js typst-package/wavy.js
 cp dist/third-party-licenses.txt typst-package/NOTICE
 echo "Dependencies:" > typst-package/NOTICE
