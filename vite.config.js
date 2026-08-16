@@ -17,7 +17,7 @@ export default defineConfig({
     preserveSymlinks: true, // this is the fix!
   },
   build: {
-    minify: 'esbuild',
+    minify: false,
     cssCodeSplit: false,
     lib: {
       // Could also be a dictionary or array of multiple entry points
