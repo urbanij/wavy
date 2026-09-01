@@ -16,6 +16,7 @@ dist-ssr
 wavy.svg
 typst-package/wavy.js
 typst-package/wavy.svg
+typst-package/NOTICE
 
 # Editor directories and files
 .vscode/*
